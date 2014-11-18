@@ -13,8 +13,8 @@ rozbaľovať aj leJOS SDK.
 Myslím, že je nutné inštalovať aj JDK (fakt si nie som istý...) [odtiaľto](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 Nasleduje inštalácia samotného leJOSu. Windowsáci si ho stiahnu
-[odtiaľto](http://sourceforge.net/projects/lejos/files/lejos-EV3/0.8.1-beta/leJOS_EV3_0.8.1-beta_win32.zip/download)
-, Unixáci [odtiaľto](http://sourceforge.net/projects/lejos/files/lejos-EV3/0.8.1-beta/leJOS_EV3_0.8.1-beta_win32.zip/download).
+[odtiaľto](http://sourceforge.net/projects/lejos/files/lejos-EV3/0.8.1-beta/leJOS_EV3_0.8.1-beta_win32.zip/download),
+Unixáci [odtiaľto](http://sourceforge.net/projects/lejos/files/lejos-EV3/0.8.1-beta/leJOS_EV3_0.8.1-beta_win32.zip/download).
 Zložku, ktorú súbor obsahuje rozbaľte kde len chcete, ale tak, aby ste to potom
 aj našli.
 
@@ -30,12 +30,12 @@ Prvý krok je inštalácia leJOS pluginu do Eclipse. Otvorte `Help->Install New
 Software...` (až budete čakať, kým sa ten plugin nainštaluje, pochopíte, prečo
 tam dali tri bodky) a vedľa políčka `Work with:` stlačte `Add`. Zdroj nazvite
 pokojne akokoľvek (napríklad leJOS) a ako lokáciu použite 
-`http://lejos.sourceforge.net/tools/eclipse/plugin/ev3`. Zaškrtnite políčko
-vedľa `leJOS EV3 Support` a dokončite inštaláciu.
+`http://lejos.sourceforge.net/tools/eclipse/plugin/ev3`. Po pridaní zaškrtnite
+políčko vedľa `leJOS EV3 Support` a dokončite inštaláciu.
 
 Po reštarte Eclipsu sa vám vo `Window->Preferences` objaví naľavo možnosť `leJOS
 EV3`. Jediné čo v nej musíte nastaviť je, že v `EV3_HOME` zvolíte zložku, ktorú
-ste vybalili z archívu obsahujúceho leJOS. V tomto bode je Eclipse
+ste vybalili z archívu obsahujúceho leJOS. V tomto okamihu je Eclipse
 nakonfigurovaná a môžete vytvoriť nový projekt.
 
 Vytvorenie nového projektu
@@ -45,14 +45,14 @@ Nový projekt pre EV3 sa vytvára pre Eclipse štandardným spôsobom, a to cez
 obrazovke. 
 
 Potom, čo sa vám projekt objaví v ľavom paneli však prichádza chyták. JDK,
-ktoré používame je totiž novšie ako to, ktoré je v leJOSe. To spôsouje, že ak
-v ňom vyprodukujete nejaký Javový bytekód, EV3 kocka vám ten program zhodí s
-výnimkou. Preto je potrebné kliknúť na názov projektu pravým a v
+ktoré používame je totiž novšie ako to, ktoré je v leJOSe. To znamená, že ak
+v ňom vyprodukujete nejaký Javový bytekód, EV3 kocka ten program zhodí s
+výnimkou. Preto je potrebné kliknúť na názov projektu pravým tlačidlom a v
 `Properties->Java Build Path->Libraries` zvoliť `JRE System Library` (alebo
 podobné, je možné, že u mňa sa volá trošku inak), kliknúť na `Edit` a v
 `Execution Environment` zvoliť to, ktoré má v názve `1.7`.
 
-Tieto kroky je potrebné zopakovať pre každý projekt.
+Tieto kroky je potrebné zopakovať pre každý vytvorený projekt.
 
 Nastavenie driverov pre EV3
 ------------------------------------
